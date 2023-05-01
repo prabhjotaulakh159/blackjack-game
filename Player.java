@@ -29,7 +29,7 @@ public class Player {
 
 	private Hand hand;
 
-	// COnstructor. Throws an exception if index is negative or 0. Also sets the
+	// Constructor. Throws an exception if index is negative or 0. Also sets the
 	// default state of the player.
 	public Player(int index) {
 		if (index <= 0) {
@@ -200,7 +200,7 @@ public class Player {
 		final int valueOfDealerHandIfTheyOnlyHaveAnAce = 11;
 		if (dealerValue == valueOfDealerHandIfTheyOnlyHaveAnAce) {
 			this.insured = true;
-			this.previousAction = "PLAYER # " + this.index + "  GOT INSURANCE: IF THE DEALER HAS AN ACE AND A 10 POINT CARD, THEY THEY LOSE NOTHING";
+			this.previousAction = "PLAYER # " + this.index + "  GOT INSURANCE: IF THE DEALER HAS AN ACE AND A 10 POINT CARD, THEY LOSE NOTHING";
 		} else {
 			this.previousAction = "PLAYER # " + this.index + " ATTEMPTED TO GET INSURANCE, BUT THE DEALER DOES NOT HAVE A SINGLE ACE CARD";
 		}

@@ -14,8 +14,7 @@ public enum Value {
 	QUEEN("Q", 10),
 	KING("K", 10);
 
-	// A value has a string representation for terminal display, and an integer
-	// value for calculating hands.
+	// A value has a string representation for terminal display, and an integer value for calculating hands.
 	private final String valueString;
 	private final int valueInt;
 

@@ -259,7 +259,7 @@ public class Blackjack {
 		final int ONLY_2_CARDS = 2;
 		final int BLACKJACK = 21;
 		for (int i = 0; i < table.length(); i++) {
-			if (table.get(i).hasBusted() || table.get(i).hasSurrendered()) {
+			if (!playerDidNotBustOrSurrender(table.get(i))) { // inverse (!) condition. if they DID bust or surrender 
 				table.get(i).lose();
 				System.out.println("PLAYER #" + table.get(i).getIndex() + " HAS BUSTED/SURRENDERED AND LOST " + table.get(i).getBet() + "$");
 			} else if (table.get(i).getValue() < dealersValue) {
